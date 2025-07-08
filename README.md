@@ -1,10 +1,6 @@
-# ATtiny85-LED-Timer
-Programmable LED timer project. Ex: 6hr On/18hr Off
-
-
 🔋 Project Overview: ATtiny85 6h ON / 18h OFF LED Timer
-🧰 Hardware Requirements:
-Component	Description:
+🧰 Hardware Requirements
+Component	Description
 ATtiny85	8-pin microcontroller
 2x AAA Batteries	3V total power
 2x LEDs	Small low-current (e.g. 2mA)
@@ -13,14 +9,12 @@ Capacitor	0.1µF (decoupling, optional)
 Programmer	USBASP, Arduino as ISP, or Tiny AVR Programmer
 Optional Switch	To reset/start the timer manually
 
-Wiring:
-
- |         *---\/---*                 |
- | PB5 (5) |1     8| VCC              |
- | PB3 (3) |2     7| PB2 (2)          |
- | PB4 (4) |3     6| PB1 (1) → LED 2  |
- |  GND    |4     5| PB0 (0) → LED 1  |
- |         +-------+                  |
+          +---\/---+
+  PB5 (5) |1     8| VCC
+  PB3 (3) |2     7| PB2 (2)
+  PB4 (4) |3     6| PB1 (1) → LED 2
+   GND    |4     5| PB0 (0) → LED 1
+          +-------+
 
 | ATtiny85 Pin | Function    | Connects To            |
 | ------------ | ----------- | ---------------------- |
@@ -93,4 +87,22 @@ Copy
 Edit
 1000 mAh / 24.17 mAh ≈ ~41.4 days
 ✅ Expected Runtime: ~40–45 days
+
+If using PWM (Pulse Width Modulation):
+
+🧠 How PWM Works on ATtiny85
+The ATtiny85 supports hardware PWM on the following pins:
+
+Pin	Arduino ID	Hardware PWM
+5	PB0 (0)	✅ Timer 0
+6	PB1 (1)	✅ Timer 0
+7	PB2 (2)	✅ Timer 1
+
+
+Current Features List:
+
+6Hr On/18Hr Off - Configurable
+Sleep Mode / Watchdog system
+PWM for LEDs
+Fade In/Fade Out effect
 
