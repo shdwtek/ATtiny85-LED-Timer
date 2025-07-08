@@ -3,8 +3,8 @@ Programmable LED timer project. Ex: 6hr On/18hr Off
 
 
 🔋 Project Overview: ATtiny85 6h ON / 18h OFF LED Timer
-🧰 Hardware Requirements
-Component	Description
+🧰 Hardware Requirements:
+Component	Description:
 ATtiny85	8-pin microcontroller
 2x AAA Batteries	3V total power
 2x LEDs	Small low-current (e.g. 2mA)
@@ -12,6 +12,8 @@ ATtiny85	8-pin microcontroller
 Capacitor	0.1µF (decoupling, optional)
 Programmer	USBASP, Arduino as ISP, or Tiny AVR Programmer
 Optional Switch	To reset/start the timer manually
+
+Wiring:
 
           +---\/---+
   PB5 (5) |1     8| VCC
