@@ -98,6 +98,23 @@ Pin	Arduino ID	Hardware PWM
 6	PB1 (1)	✅ Timer 0
 7	PB2 (2)	✅ Timer 1
 
+Estimated Battery Life with PWM at 25% Duty
+
+With PWM dimming at 25% brightness and sleep mode enabled, your ATtiny85 timer setup is estimated to run for approximately:
+
+🕒 161 days (over 5 months)
+This assumes:
+
+2x AAA batteries (1000 mAh total)
+
+Each LED draws ~2 mA at full brightness
+
+PWM reduces total LED current to ~1 mA
+
+6 hours ON, 18 hours OFF per 24-hour cycle
+
+ATtiny85 in deep sleep with minimal wake activity
+
 
 Current Features List:
 
