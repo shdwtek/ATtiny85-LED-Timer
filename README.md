@@ -15,12 +15,12 @@ Optional Switch	To reset/start the timer manually
 
 Wiring:
 
-          +---\/---+
-  PB5 (5) |1     8| VCC
-  PB3 (3) |2     7| PB2 (2)
-  PB4 (4) |3     6| PB1 (1) → LED 2
-   GND    |4     5| PB0 (0) → LED 1
-          +-------+
+ |         *---\/---*                 |
+ | PB5 (5) |1     8| VCC              |
+ | PB3 (3) |2     7| PB2 (2)          |
+ | PB4 (4) |3     6| PB1 (1) → LED 2  |
+ |  GND    |4     5| PB0 (0) → LED 1  |
+ |         +-------+                  |
 
 | ATtiny85 Pin | Function    | Connects To            |
 | ------------ | ----------- | ---------------------- |
